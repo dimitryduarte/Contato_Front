@@ -1,0 +1,13 @@
+<div class="mx-auto ">
+  <h1 class="display-6 text-primary">Agenda</h1>
+  <hr>		
+  <div class="bg-light rounded p-4 box-shadow">
+    <ul class="lista-plano list-unstyled">
+      <li (click)="onSelecionado(item)" *ngFor = "let item of listaContato">
+        {{item.nome}}
+        <button class="btn btn-danger float-right" (click)="onRemover(item)">Remover</button>
+        <hr>
+      </li>
+    </ul>
+  </div>
+</div>
